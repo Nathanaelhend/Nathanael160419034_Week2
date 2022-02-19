@@ -22,7 +22,7 @@ class ResultFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
             val finalScore = ResultFragmentArgs.fromBundle(requireArguments()).finalScore
-            textScore.text = finalScore
+            textScore.text = "Your Score is $finalScore"
         }
         buttonBack.setOnClickListener {
             val action =ResultFragmentDirections.actionToGame()
